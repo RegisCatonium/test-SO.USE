@@ -8,14 +8,25 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	btn.addEventListener('click', (event) => {
 		event.preventDefault();
+		btn.disabled = true;
 		arrCards.forEach(el => {
-			el.dataset.order = random()
+			el.classList.add('anim');
+			setTimeout(() => {
+				el.dataset.order = randomPosition();
+			}, 1000)
+			setTimeout(() => {
+				el.classList.remove('anim');
+			}, randomTime())
 		})
+		setTimeout(() => {
+			btn.disabled = false;
+		}, 5000)
 	});
 
-	function random() {
+	function randomPosition() {
 		return Math.floor(Math.random() * 8);
 	}
-
-	 
+	function randomTime() {
+		return Math.floor(Math.random() * (5000 - 1100) + 1100);
+	}
 })
