@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: roboto-oh5, sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #556;
+  min-width: 32rem;
+  position: relative;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  padding: 5rem 0;
+}
+.container a.btn, .container button.btn {
+  margin: 0 auto;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.card {
+  width: 25rem;
+  height: 25rem;
+  -webkit-clip-path: url(#mask);
+  clip-path: url(#mask);
+  transition: opacity 1s ease-out;
+}
+.card[data-order="0"] {
+  order: 0;
+}
+.card[data-order="1"] {
+  order: 1;
+}
+.card[data-order="2"] {
+  order: 2;
+}
+.card[data-order="3"] {
+  order: 3;
+}
+.card[data-order="4"] {
+  order: 4;
+}
+.card[data-order="5"] {
+  order: 5;
+}
+.card[data-order="6"] {
+  order: 6;
+}
+.card[data-order="7"] {
+  order: 7;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  transition: transform 1s linear;
+}
+.card:hover .card__img {
+  transform: scale(150%);
+}
+.card.anim {
+  opacity: 0;
+}
+
+a.btn, button.btn {
+  display: block;
+  padding: 2rem;
+  width: 35.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #478BF9;
+  border: 1px solid #478BF9;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+a.btn:hover, button.btn:hover {
+  color: #478BF9;
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: roboto-oh5, sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #556;
+  min-width: 32rem;
+  position: relative;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1100px) {
+  .block {
+    max-width: 90rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .block {
+    max-width: 60rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .card {
+    width: 20rem;
+    height: 20rem;
+    -webkit-clip-path: url(#mask-mb);
+    clip-path: url(#mask-mb);
+  }
+}/*# sourceMappingURL=main.css.map */

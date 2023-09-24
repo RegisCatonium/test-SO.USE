@@ -1,0 +1,74 @@
+@import config
+
+// стили
+
+.wrap
+	padding: 5rem 0
+
+	background-color: #407
+	& a.btn, & button.btn
+		margin: 0 auto
+
+.container
+	max-width: 120rem
+	padding: 5rem 0
+
+	background-color: #64a
+
+.col
+	align-items: center
+	&[data-order="0"]
+		order: 0
+	&[data-order="1"]
+		order: 1
+	&[data-order="2"]
+		order: 2
+	&[data-order="3"]
+		order: 3
+	&[data-order="4"]
+		order: 4
+	&[data-order="5"]
+		order: 5
+	&[data-order="6"]
+		order: 6
+	&[data-order="7"]
+		order: 7
+.card
+	width: 25rem
+	height: 25rem
+	margin: 0 auto
+	-webkit-clip-path: url(#mask)
+	clip-path: url(#mask)
+
+	&__img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center center
+		transition: transform 1s linear
+		
+
+	&:hover	.card__img
+		transform: scale(150%)
+
+
+a.btn, button.btn
+	display: block
+	padding: 2rem
+	margin: 5rem auto 0
+	width: 35.2rem
+	font-size: 2.4rem
+	font-weight: 600
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	background-color: $accent
+	border: 1px solid $accent
+	border-radius: 2.5rem
+	cursor: pointer
+	transition: color .3s ease, background-color .3s ease
+	&:hover
+		color: $accent
+		background-color: transparent
+
+@import media
